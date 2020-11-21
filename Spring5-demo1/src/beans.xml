@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--配置 User 对象创建-->
+        <bean id="user" class="pers.guchh.User">
+<!--                set方法属性注入-->
+<!--                <property name="userName" value="张三"></property>-->
+<!--                <property name="age" value="12"></property>-->
+<!--                有参构造-->
+                <constructor-arg name="userName" value="阿古"></constructor-arg>
+                <constructor-arg name="age" value="15"></constructor-arg>
+        </bean>
+        </beans>
